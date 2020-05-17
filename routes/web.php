@@ -15,6 +15,16 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/invisible', function () {
+    return view('invisible');
+});
+Route::post('/invisible', function (Request $request) {
+    $request->validate([
+        'g-recaptcha-response' => 'required|captcha'
+    ]);
+
+    return 'Data is valid';
+});
 Route::get('/single', function () {
     return view('single');
 });

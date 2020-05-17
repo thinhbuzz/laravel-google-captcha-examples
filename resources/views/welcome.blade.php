@@ -72,6 +72,7 @@
 
         <div class="links">
             <a href="{{ url('/single') }}">Single</a>
+            <a href="{{ url('/invisible') }}">Invisible</a>
             <a href="{{ url('/multiple') }}">Multiple</a>
             <a href="{{ url('/custom-js') }}">Custom-js</a>
             <a href="{{ url('/difference-key') }}">Difference key</a>
