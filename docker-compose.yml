@@ -2,9 +2,7 @@ version: '3'
 services:
   webserver:
     container_name: laravel-google-captcha-examples-database-webserver
-    build:
-      context: .
-      dockerfile: .docker/Dockerfile-webserver
+    image: thinhbuzz/php-74-apache-xdebug-29-rewrite
     ports:
       - "80:80"
     volumes:
